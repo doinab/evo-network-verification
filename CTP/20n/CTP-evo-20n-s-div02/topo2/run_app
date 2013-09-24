@@ -1,0 +1,36 @@
+#!/bin/bash
+
+inp="log_app.txt"
+out="fitness.out"
+out_unique="log_app_unique.txt"
+
+NO_NODES=20
+PKTS=39     # this is due to the 200-second simulation time and the 5-second packet injection interval
+
+####
+# first, some log processing into numbers
+
+# n1: number of DATA_SENT log lines, only from nodes 1 and up
+n1=`cat $inp | grep DATA_SENT | grep -v DEBUG\ \(0\) | wc -l | awk {'print $1'}`
+
+# n2: number of DATA_RECV log lines at sink, excluding any packets sent by the sink itself
+n2=`cat $inp | grep DATA_RECV | grep DEBUG\ \(0\) | grep -v "from=0" | wc -l | awk {'print $1'}`
+
+# n3: (smaller than n2) unique n2 lines, factoring out the timestamp; saved in a file
+# (basically, this is the number of data packets received at least once at the sink)
+awk 'BEGIN{FS=OFS=" "}{$3=""}{print}' $inp | grep DATA_RECV | grep DEBUG\ \(0\) | grep -v "from=0" | sort -u > $out_unique
+n3=`cat $out_unique | wc -l | awk {'print $1'}`
+
+####
+# finally, some printing of fitnesses
+
+# Data Delivery Ratio, DRR
+printf "  %.5f" $(bc -l <<< "scale = 7; $n3 / $n1") >> $out
+
+# number of duplicate packets received at sink
+printf "  %d" $(bc -l <<< "scale = 1; $n2 - $n3") >> $out
+
+# for debugging: ideal number of sends,
+printf "  %d" $(bc -l <<< "scale = 1; ($NO_NODES-1) * $PKTS") >> $out
+# ...actual number of sends, receives, unique receives
+echo -n "  "$n1"  "$n2"  "$n3 >> $out
