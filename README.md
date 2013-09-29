@@ -1,23 +1,21 @@
 evo-network-verification
 ========================
 
-This is a large data set from experimentation with the __worst-case energy behaviour of network protocols___. Current protocols analyzed: Collection Tree Protocol (CTP) and Multihop Link Quality Indicator (MHLQI) for ad-hoc wireless networks. We looked at the (worst-case) energy behaviour of these protocols, i.e., estimated through the number of packet transmission and reception over wireless interfaces, both for a single node and summed up for the entire network. 
+This is a large data set from experimentation with the __worst-case energy behaviour of network protocols__. Current protocols analyzed: Collection Tree Protocol (CTP) and Multihop Link Quality Indicator (MHLQI) for ad-hoc wireless networks. We looked at the (worst-case) energy behaviour of these protocols, i.e., estimated through the number of packet transmission and reception over wireless interfaces, both for a single node and summed up for the entire network. 
 
-The methodology exploits a ___stochastic optimization technique___, i.e., an evolutionary algorithm, to generate a large set of network topologies over which the amount of network traffic is the maximum that the algorithm found within a certain runtime. The fitness functions to evaluate a topology are: (a) SUM, the total count of network transmission and reception events, and (b) MAX, the highest single-node count of such events.
+The methodology exploits a __stochastic optimization technique__, i.e., an evolutionary algorithm, to generate a large set of network topologies over which the amount of network traffic is the maximum that the algorithm found within a certain runtime. The fitness functions to evaluate a topology are: (a) SUM, the total count of network transmission and reception events, and (b) MAX, the highest single-node count of such events.
 
 Statistics can then be performed upon this data set of energy-hungry topologies for each protocol, and a causal relation can be verified (through further experimentation) between particular topological features and, e.g., extreme energy consumption under CTP. 
 
 A journal publication detailing the method is currently under revision.
 
-The format of this dataset:
+The __format__ of this dataset:
 
 *  There is a _root directory_ for each protocol: CTP, MHLQI. Each such directory then has one _subdirectory_ per configuration of experiment, e.g., "CTP-evo-20n-s-div02" evaluates CTP over 20-node networks, with the SUM fitness, and a network density of 1/2. 
 
 *  For each experiment, the subdirectory gives all the _topology files_ resulted during the runtime of the algorithm. The topologies are directional, and encoded with one link per line, i.e., "gain    0   29   -16" models a link from node 0 to node 29 of signal gain -16. 
 
-*  Also for each experiment, the _data file_ 
-
-> data_unique_individuals***.txt 
+*  Also for each experiment, the _data file_ named data-unique-individuals[..].txt 
 
 is a processed summary of the set of topologies. Here, each _data line_ processes one topology file; e.g. the following line:
 
