@@ -21,13 +21,13 @@ CTP.
 
 Two articles describe this work:
 
-(ASOC 2014) Bucur, D., Iacca, G., Squillero, G., and Tonda, A. (2014a). The
+(ASOC 2014) _Bucur, D., Iacca, G., Squillero, G., and Tonda, A. (2014a). The
 impact of topology on energy consumption for collection tree protocols: An
 experimental assessment through evolutionary computation. Applied Soft
-Computing, 16(0):210-222.
+Computing, 16(0):210-222._
 
-(Draft) Bucur, D., Iacca, G., de Boer, P.T. A Performance Analysis for
-Collection Routing: The Impact of Topology and Table Size on Delivery. 2014.
+(Draft) _Bucur, D., Iacca, G., de Boer, P.T. A Performance Analysis for
+Collection Routing: The Impact of Topology and Table Size on Delivery. 2014._
 
 The __format__ of this dataset:
 
