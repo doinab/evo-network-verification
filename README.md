@@ -57,8 +57,7 @@ D-max-degree 15     D-min-degree 3  D-max-in-degree 9   D-min-in-degree 1
 D-max-out-degree 9  D-min-out-degree 1  D-diameter-from0 4  UR-edges 18    
 UR-max-degree 3     UR-min-degree 0     UR-connected 0  UR-components 32    DD
 18   NSUC.disc 0    CSUC.disc 0     min-CSUC.disc 0     all-sinkless_cycles 0  
-NSUC.conn 0     NSUC-D-max-degree 0 NSUC-D-max-in-degree 0 
-NSUC-D-max-out-degree 0
+NSUC.conn 0     NSUC-D-max-degree 0 NSUC-D-max-in-degree 0    NSUC-D-max-out-degree 0
 
 summarizes the behaviour and structure of topology CU4 (the identifier in
 column 2). This topology is found in file topoCU4.txt in the same
