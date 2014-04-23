@@ -1,5 +1,3 @@
-evo-network-verification ========================
-
 This is a large data set from experimentation with the __worst-case behaviour
 of ad-hoc network protocols__. Current protocols analyzed: Collection Tree
 Protocol (CTP) and Multihop Link Quality Indicator (MHLQI) for ad-hoc wireless
@@ -15,12 +13,13 @@ which the data delivery (as a percentage of the data sent) is lowest, or the
 amount of network traffic is the maximum that the algorithm found within a
 certain runtime.
 
-Statistics can then be performed upon this data set of energy-hungry
-topologies for each protocol, and a causal relation can be verified (through
-further experimentation) between particular topological features and, e.g.,
-delivery in CTP.
+Statistics can then be performed upon this data set of _counterexample_
+topologies (i.e., counterexample to good performance), and a causal relation
+can be verified (through further experimentation) between particular
+topological features and particular performance factors, e.g., delivery in
+CTP.
 
-Two articles describing this work are in progress:
+Two articles describe this work:
 
 (ASOC 2014) Bucur, D., Iacca, G., Squillero, G., and Tonda, A. (2014a). The
 impact of topology on energy consumption for collection tree protocols: An
@@ -47,7 +46,7 @@ from node 0 to node 29 of signal gain -16.
 data-unique-individuals[..].txt is a processed summary of the set of topologies. Here, each _data line_
 processes one topology file; e.g. the following line:
 
-p> 5998    CU4 12665.9375  74.4231724247   12779   12540   D-edges 203    
+5998    CU4 12665.9375  74.4231724247   12779   12540   D-edges 203    
 D-max-degree 15     D-min-degree 3  D-max-in-degree 9   D-min-in-degree 1  
 D-max-out-degree 9  D-min-out-degree 1  D-diameter-from0 4  UR-edges 18    
 UR-max-degree 3     UR-min-degree 0     UR-connected 0  UR-components 32    DD
@@ -62,4 +61,4 @@ simulations) for the topology is in columns 3-4, with the maximum and minimum
 fitness among the 16 simulations in the following two columns. The remaining
 of the line holds the values of various topological metrics, starting with the
 number of network links and node degrees, and ending in values for the
-topological metrics DD, NSUC and CSUC (described in our ASOC publication).
+topological metrics DD, NSUC and CSUC (described in our ASOC 2014).
