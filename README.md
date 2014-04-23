@@ -42,8 +42,8 @@ resulted during the runtime of the algorithm. The topologies are directional,
 and encoded with one link per line, i.e., "gain    0   29   -16" models a link
 from node 0 to node 29 of signal gain -16. 
 
-*  Also for each experiment, the _data file_ named
-data-unique-individuals[..].txt is a processed summary of the set of topologies. Here, each _data line_
+For each energy experiment, the _data file_ named
+_data-..-individuals.txt_ is a processed summary of the set of topologies. Here, each data line
 processes one topology file; e.g. the following line:
 
 5998    CU4 12665.9375  74.4231724247   12779   12540   D-edges 203    
