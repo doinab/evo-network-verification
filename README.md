@@ -24,8 +24,7 @@ impact of topology on energy consumption for collection tree protocols: An
 experimental assessment through evolutionary computation. Applied Soft
 Computing, 16(0):210-222._
 
-(Draft) _Bucur, D., Iacca, G., de Boer, P.T. A Performance Analysis for
-Collection Routing: The Impact of Topology and Table Size on Delivery. 2014._
+(Draft) _Bucur, D., Iacca, G., de Boer, P.T. Characterizing Topological Bottlenecks for Data Delivery in CTP using Simulation-Based Stress Testing with Natural Selection. 2014._
 
 The __format__ of this dataset:
 
