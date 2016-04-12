@@ -19,9 +19,9 @@ CTP.
 
 Two articles describe this work:
 
-D. Bucur, G. Iacca, A. Tonda, G. Squillero, The Impact of Topology on Energy Consumption for Collection Tree Protocols: an Experimental Assessment through Evolutionary Computation, Applied Soft Computing, Elsevier, Volume 16, Issue 1, Pages 210-222, March 2014 [bib](http://dblp.uni-trier.de/rec/bibtex/journals/asc/BucurIST14)
+- D. Bucur, G. Iacca, A. Tonda, G. Squillero, The Impact of Topology on Energy Consumption for Collection Tree Protocols: an Experimental Assessment through Evolutionary Computation, Applied Soft Computing, Elsevier, Volume 16, Issue 1, Pages 210-222, March 2014 [bib](http://dblp.uni-trier.de/rec/bibtex/journals/asc/BucurIST14)
 
-D. Bucur, G. Iacca, P. T. De Boer, Characterizing Topological Bottlenecks for Data Delivery in CTP using Simulation-Based Stress Testing with Natural Selection, Ad Hoc Networks, Elsevier, Volume 30, Pages 22-45, July 2015 [bib](http://dblp2.uni-trier.de/rec/bibtex/journals/adhoc/BucurIB15)
+- D. Bucur, G. Iacca, P. T. De Boer, Characterizing Topological Bottlenecks for Data Delivery in CTP using Simulation-Based Stress Testing with Natural Selection, Ad Hoc Networks, Elsevier, Volume 30, Pages 22-45, July 2015 [bib](http://dblp2.uni-trier.de/rec/bibtex/journals/adhoc/BucurIB15)
 
 The __format__ of this dataset:
 
